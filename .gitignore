@@ -39,3 +39,6 @@ rsconnect/
 # batch files
 *.bat
 
+# File with real connection details
+MyConfig.R
+
