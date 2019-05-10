@@ -42,3 +42,6 @@ rsconnect/
 # File with real connection details
 MyConfig.R
 
+# png images
+*.png
+
