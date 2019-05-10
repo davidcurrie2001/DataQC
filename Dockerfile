@@ -12,6 +12,7 @@ RUN R -e "install.packages('jsonlite')"
 RUN R -e "install.packages('RCurl')"
 COPY DaveQCTest_0.1.0.tar.gz /usr/DaveQCTest_0.1.0.tar.gz
 RUN R -e "install.packages('/usr/DaveQCTest_0.1.0.tar.gz', repos = NULL)"
+RUN mkdir /app
 COPY DataQC.R /app/
 CMD ["/app/DataQC.R"] 
 # docker build -t mi/dataqc:test .
