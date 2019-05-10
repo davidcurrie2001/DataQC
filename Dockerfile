@@ -15,4 +15,4 @@ RUN R -e "install.packages('/usr/DaveQCTest_0.1.0.tar.gz', repos = NULL)"
 COPY DataQC.R /app/
 CMD ["/app/DataQC.R"] 
 # docker build -t mi/dataqc:test .
-# docker run -d -p 8001:8000 mi/datamapper:test
+# docker run -d -p 8001:8000 mi/dataqc:test
